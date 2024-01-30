@@ -1,0 +1,273 @@
+/* reset code and common code starts here */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+    font-weight: 400;
+
+}
+
+html {
+    font-family: sans-serif;
+    line-height: 1.15;
+    -webkit-text-size-adjust: 100%;
+    background-color: #fafafafa;
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+
+    /* .pacifico-regular {
+        font-family: "Pacifico", cursive;
+        font-weight: 400;
+        font-style: normal;
+      } */
+    font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+
+}
+
+body {
+    background-color: #fafafa;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.1rem 0.1rem 0.1rem #c4c4c4, -0.1rem 0rem 0.1rem #c4c4c4;
+}
+
+/* reset code and common code ends here */
+
+
+/* banner section starts here  */
+#container {
+    padding: 5rem 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 95vh;
+}
+
+#container article {
+    flex-basis: 70%;
+    margin: 1rem;
+}
+
+#container aside {
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.accordion {
+    font-family: Arial, Helvetica, sans-serif;
+    /* max-width: 100%; */
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-title {
+    /* display: inline-block; */
+    font-size: 1.5rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: 1px solid;
+    color: black;
+    background-color: #DDDDDD;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 1s;
+}
+
+.accordion-content>p {
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.accordion-title:hover {
+    background-color: yellow;
+}
+
+.accordion-content {
+    background: #fff;
+    display: none;
+    padding: 10px;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+.order {
+    height: auto;
+    border: 0.2rem solid;
+    /* margin-bottom: 70rem; */
+    margin-left: 20px;
+    margin-top: 15px;
+}
+
+.order-heading {
+    background-color: green;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 15px;
+    color: #fff;
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+.collection-panel {
+    margin-top: 15px;
+    margin-left: 20px;
+}
+
+.checkout-step-1 h2 {
+    color: red;
+    font-size: 20px;
+    margin-left: 20px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.collection-body {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 15px;
+    font-size: 15px;
+    height: 30rem;
+    border: 1px solid;
+    color: #fff;
+    background-color: black;
+}
+
+
+
+/* banner section ends here  */
+
+
+/* .card-btn {
+    align-self: center;
+    width: 80%;
+} */
+
+.btn {
+    background-color: #DDDDDD;
+    color: green;
+    cursor: pointer;
+    font-size: 1.6rem;
+    font-weight: 500;
+    padding: 1rem 0;
+    text-transform: uppercase;
+
+}
+
+.btn:focus {
+    background-color: green;
+    color: #fff;
+}
+
+.accordion-content>p {
+    font-size: 1.7rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.order-body>p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 14px;
+    text-align: center;
+    padding: 15px 0;
+}
+
+
+.headingforinoutdiv {
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-style {
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.input-hero {
+    border: 1px solid green;
+}
+
+.input-hero:focus {
+    border: 2px solid rgb(128, 153, 90);
+
+}
+
+
+
+/* responsive starts here */
+@media (max-width: 992px) {
+    #container article {
+        width: 60%;
+    }
+
+    #container aside {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+
+    html {
+        font-size: 55.5%;
+    }
+
+    #container article {
+        width: 60%;
+    }
+
+    #container aside {
+        width: 40%;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 48.5%;
+    }
+
+    #container {
+        flex-direction: column;
+    }
+
+    #container article {
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 5rem;
+    }
+
+    #container aside {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        position: relative;
+        right: 10px;
+    }
+
+    .checkout-step-1 h2 {
+        font-size: medium !important;
+    }
+
+    #order-heading-h1 {
+        font-size: 10px;
+    }
+
+}
+
+/* responsive ends here */
