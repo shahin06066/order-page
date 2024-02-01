@@ -18,14 +18,6 @@ html {
     scroll-behavior: smooth;
     font-family: "Roboto", sans-serif;
 
-    /* .pacifico-regular {
-        font-family: "Pacifico", cursive;
-        font-weight: 400;
-        font-style: normal;
-      } */
-    font-family-sans-serif: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-    font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
-
 }
 
 body {
@@ -43,7 +35,6 @@ body {
     padding: 5rem 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
     min-height: 95vh;
 }
 
@@ -54,8 +45,27 @@ body {
 
 #container aside {
     flex-basis: 30%;
-    text-align: center;
+    /* text-align: center; */
 }
+
+/* banner section */
+
+.banner-section {
+    background-image: url(./order-banar.jpg);
+    width: 100%;
+    height: 120px;
+    margin-top: 30px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+}
+
+span {
+    font-size: large;
+    color: black;
+    font-weight: 500;
+}
+
 
 .accordion {
     font-family: Arial, Helvetica, sans-serif;
@@ -67,7 +77,6 @@ body {
 }
 
 .accordion-title {
-    /* display: inline-block; */
     font-size: 1.5rem;
     font-weight: 600;
     cursor: pointer;
@@ -81,12 +90,13 @@ body {
 
 .accordion-content>p {
     font-size: 1.5rem;
-    text-align: justify;
+    /* text-align: justify; */
 }
 
 .accordion-title:hover {
-    background-color: yellow;
+    background-color: #DDA42E;
 }
+
 
 .accordion-content {
     background: #fff;
@@ -98,10 +108,12 @@ body {
     display: block;
 }
 
+
+/* aside section  */
+
 .order {
     height: auto;
     border: 0.2rem solid;
-    /* margin-bottom: 70rem; */
     margin-left: 20px;
     margin-top: 15px;
 }
@@ -112,8 +124,8 @@ body {
     font-weight: 600;
     padding: 15px;
     color: #fff;
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
 
 }
 
@@ -126,8 +138,8 @@ body {
     color: red;
     font-size: 20px;
     margin-left: 20px;
-    display: flex;
-    justify-content: flex-start;
+    /* display: flex;
+    justify-content: flex-start; */
 }
 
 .collection-body {
@@ -144,7 +156,7 @@ body {
 
 
 
-/* banner section ends here  */
+/* accordion section ends here  */
 
 
 /* .card-btn {
@@ -152,14 +164,28 @@ body {
     width: 80%;
 } */
 
+
+
+.button-flex-end {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.hero-btn>p {
+    font-size: 15px;
+    margin-top: 10px;
+}
+
 .btn {
     background-color: #DDDDDD;
     color: green;
     cursor: pointer;
-    font-size: 1.6rem;
+    font-size: 1.2rem;
     font-weight: 500;
-    padding: 1rem 0;
+    padding: 8px 13px;
     text-transform: uppercase;
+    position: relative;
+    bottom: 25px;
 
 }
 
@@ -201,9 +227,24 @@ body {
     border: 1px solid green;
 }
 
+.hero-btn P {
+    display: flex;
+    gap: 10px;
+}
+
 .input-hero:focus {
     border: 2px solid rgb(128, 153, 90);
 
+}
+
+textarea {
+    font-size: 20px;
+    color: black;
+    padding: 15px;
+}
+
+textarea:focus {
+    border: 2px solid green;
 }
 
 
@@ -236,7 +277,7 @@ body {
 
 @media (max-width: 600px) {
     html {
-        font-size: 48.5%;
+        font-size: 62.5%;
     }
 
     #container {
@@ -261,11 +302,11 @@ body {
     }
 
     .checkout-step-1 h2 {
-        font-size: medium !important;
+        font-size: medium;
     }
 
     #order-heading-h1 {
-        font-size: 10px;
+        font-size: 15px;
     }
 
 }
